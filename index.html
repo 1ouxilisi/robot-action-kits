@@ -87,6 +87,59 @@
             color: #666;
             margin-top: 8px;
         }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .demo-card {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .demo-card .demo-icon {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+        .demo-card h4 {
+            font-size: 0.95em;
+            color: #1a1a2e;
+            margin-bottom: 4px;
+        }
+        .demo-card p {
+            font-size: 0.85em;
+            color: #666;
+        }
+        .demo-card .status {
+            display: inline-block;
+            background: #d4edda;
+            color: #155724;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            margin-top: 8px;
+        }
+        .case-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            border-left: 3px solid #28a745;
+        }
+        .case-card h4 {
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .case-card .case-meta {
+            color: #28a745;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        .case-card p {
+            color: #666;
+            font-size: 0.95em;
+        }
         .pricing-table {
             width: 100%;
             border-collapse: collapse;
@@ -199,25 +252,50 @@
             <div>
                 <span class="tag">全程远程</span>
                 <span class="tag">无需实体机器人</span>
-                <span class="tag">标准化SOP</span>
-                <span class="tag">AI协同快速迭代</span>
+                <span class="tag">21个标准化动作包</span>
+                <span class="tag">5个已跑通Demo</span>
             </div>
         </div>
 
         <div class="section">
-            <h2>我们做什么</h2>
-            <p>把工业场景的人工作业流程，拆解成机器人可执行的标准化动作序列，在Linkcraft灵创平台中跑通仿真Demo，输出工程源文件+SOP文档+演示视频。</p>
-            <br>
-            <ul class="feature-list">
-                <li>不造机器人本体，不做底层算法</li>
-                <li>专注工业场景Know-how → 机器人动作包</li>
-                <li>纯线上远程交付，不需要现场调试硬件</li>
-                <li>适合团队预研、Demo演示、技能库搭建</li>
-            </ul>
+            <h2>已跑通Demo（仿真验证）</h2>
+            <p style="margin-bottom: 16px; color: #666; font-size: 0.95em;">以下5个动作已在Linkcraft灵创平台完成仿真验证，可直接查看演示效果。</p>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <div class="demo-icon">🔋</div>
+                    <h4>电池包高压断电</h4>
+                    <p>断电、验电、挂牌全套流程</p>
+                    <div class="status">✅ 已跑通</div>
+                </div>
+                <div class="demo-card">
+                    <div class="demo-icon">🔩</div>
+                    <h4>螺栓拆卸</h4>
+                    <p>电池包固定螺栓拆卸动作</p>
+                    <div class="status">✅ 已跑通</div>
+                </div>
+                <div class="demo-card">
+                    <div class="demo-icon">🔌</div>
+                    <h4>接插件插拔</h4>
+                    <p>高压接插件拔插动作</p>
+                    <div class="status">✅ 已跑通</div>
+                </div>
+                <div class="demo-card">
+                    <div class="demo-icon">🔍</div>
+                    <h4>外观巡检</h4>
+                    <p>电池包外观检查动作</p>
+                    <div class="status">✅ 已跑通</div>
+                </div>
+                <div class="demo-card">
+                    <div class="demo-icon">⚡</div>
+                    <h4>绝缘检测</h4>
+                    <p>绝缘电阻检测动作</p>
+                    <div class="status">✅ 已跑通</div>
+                </div>
+            </div>
         </div>
 
         <div class="section">
-            <h2>五大行业赛道</h2>
+            <h2>九大行业赛道（21个动作包）</h2>
             <div class="track-grid">
                 <div class="track-card">
                     <h3>新能源三电维修</h3>
@@ -244,6 +322,40 @@
                     <div class="count">1个动作包</div>
                     <p>数控机床上下料循环，机加工厂自动化场景</p>
                 </div>
+                <div class="track-card">
+                    <h3>医院药房配药</h3>
+                    <div class="count">1个动作包</div>
+                    <p>药品分拣、核对、配送交接，医院药房场景</p>
+                </div>
+                <div class="track-card">
+                    <h3>实验室样品检测</h3>
+                    <div class="count">1个动作包</div>
+                    <p>样品取样、放置、检测、记录，科研实验室场景</p>
+                </div>
+                <div class="track-card">
+                    <h3>餐厅传菜送餐</h3>
+                    <div class="count">1个动作包</div>
+                    <p>传菜、上菜、收桌，餐饮服务场景</p>
+                </div>
+                <div class="track-card">
+                    <h3>酒店客房整理</h3>
+                    <div class="count">1个动作包</div>
+                    <p>客房清洁、布草更换、用品补充，酒店服务场景</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>客户案例</h2>
+            <div class="case-card">
+                <h4>新能源车企售后团队｜电池包检修动作包</h4>
+                <div class="case-meta">交付：10个动作包 + SOP文档 + 5个Demo视频</div>
+                <p>为某新能源车企售后团队定制电池包检修全套动作序列，从高压断电到密封检测共10步，用于团队预研和内部培训。客户基于我方提供的动作包，结合自有机器人本体做了适配调试，缩短了前期流程梳理时间。</p>
+            </div>
+            <div class="case-card">
+                <h4>具身智能创业团队｜配电柜巡检场景Demo</h4>
+                <div class="case-meta">交付：3个动作包 + 仿真Demo</div>
+                <p>为早期具身智能团队提供工业配电柜巡检场景的动作编排方案，包含外观巡检、红外测温、柜内清扫三个标准动作，用于团队产品演示和投资人沟通。</p>
             </div>
         </div>
 
