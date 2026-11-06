@@ -23,7 +23,7 @@
         }
         .hero {
             text-align: center;
-            padding: 60px 0;
+            padding: 60px 20px;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: white;
             border-radius: 12px;
@@ -134,6 +134,53 @@
             color: #e94560;
             font-weight: bold;
         }
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .step {
+            text-align: center;
+            padding: 16px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .step .num {
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            border-radius: 50%;
+            background: #e94560;
+            color: white;
+            font-weight: bold;
+            margin: 0 auto 12px;
+        }
+        .step h4 {
+            font-size: 0.95em;
+            color: #1a1a2e;
+            margin-bottom: 4px;
+        }
+        .step p {
+            font-size: 0.85em;
+            color: #666;
+        }
+        .faq-item {
+            padding: 16px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h4 {
+            color: #1a1a2e;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        .faq-item p {
+            color: #666;
+            font-size: 0.95em;
+        }
         @media (max-width: 600px) {
             .hero h1 {
                 font-size: 1.8em;
@@ -201,6 +248,32 @@
         </div>
 
         <div class="section">
+            <h2>合作流程</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="num">1</div>
+                    <h4>需求沟通</h4>
+                    <p>说明场景和需求，发参考资料</p>
+                </div>
+                <div class="step">
+                    <div class="num">2</div>
+                    <h4>报价确认</h4>
+                    <p>选套餐，签简易协议，付定金</p>
+                </div>
+                <div class="step">
+                    <div class="num">3</div>
+                    <h4>开发制作</h4>
+                    <p>拆解动作流程，跑通仿真Demo</p>
+                </div>
+                <div class="step">
+                    <div class="num">4</div>
+                    <h4>验收交付</h4>
+                    <p>预览确认，尾款结清，发源文件</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
             <h2>报价套餐</h2>
             <table class="pricing-table">
                 <thead>
@@ -239,6 +312,26 @@
                 <li>异常处理分支逻辑</li>
                 <li>演示预览视频</li>
             </ul>
+        </div>
+
+        <div class="section">
+            <h2>常见问题</h2>
+            <div class="faq-item">
+                <h4>实体机器人能直接跑吗？</h4>
+                <p>这是Linkcraft平台仿真示教Demo，动作时序、姿态是标准化编排好的。实体端还要根据机器人本体的关节参数、控制器做适配调试，文件给到你们的工程师，可以作为示教基准和参考SOP。</p>
+            </div>
+            <div class="faq-item">
+                <h4>修改是随便改吗？</h4>
+                <p>套餐自带的免费修改，是姿态微调、顺序微调、文档文字调整；新增步骤、换全新场景，属于新增需求，需要重新报价。</p>
+            </div>
+            <div class="faq-item">
+                <h4>多久能交付？</h4>
+                <p>看套餐：A套餐1-2天，B套餐2-4天，C套餐4-7天。加急可以单独排期，会有溢价。</p>
+            </div>
+            <div class="faq-item">
+                <h4>适合什么类型的客户？</h4>
+                <p>具身智能团队预研、高校实验室、新能源/电力/化工企业数字化转型、机器人公司技能库搭建。</p>
+            </div>
         </div>
 
         <div class="contact-cta">
